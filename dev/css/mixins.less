@@ -1,0 +1,83 @@
+// MIXINS
+@gray-darker: lighten(#000, 10%); // #222
+@gray-dark: lighten(#000, 30%); // #333
+@gray: lighten(#000, 50%); // #555
+@gray-light: lighten(#000, 70%); // #999
+@gray-lighter: lighten(#000, 90%); // #eee
+
+.nopadmargin {
+  padding: 0;
+  margin: 0 auto;
+}
+.absolutecenter {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  .transform("translate(-50%, -50%)");
+}
+.gradient (@origin, @color1, @color2) {
+  background-image: -webkit-linear-gradient(@origin, @color1, @color2);
+  background-image: -moz-linear-gradient(@origin, @color1, @color2);
+  background-image: -o-linear-gradient(@origin, @color1, @color2);
+  background-image: -ms-linear-gradient(@origin, @color1, @color2);
+  background-image: linear-gradient(@origin, @color1, @color2);
+}
+.box-shadow (@x, @y, @blur, @color) {
+  -webkit-box-shadow: @x @y @blur @color;
+  box-shadow: @x @y @blur @color;
+}
+.drop-shadow (@x, @y, @blur, @color) {
+  -webkit-filter: drop-shadow(@x @y @blur @color);
+  filter: drop-shadow(@x @y @blur @color);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(@x, @y, @color)";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(@x, @y, @color)";
+}
+.filter(@filters) {
+  filter: @filters;
+  -webkit-filter: @filters;
+}
+.blur (@px) {
+  filter: blur(@px);
+  -webkit-filter: blur(@px);
+}
+.transform (@transforms) {
+  -webkit-transform: translateZ(0) @transforms;
+  -moz-transform: translateZ(0) @transforms;
+  -ms-transform: translateZ(0) @transforms;
+  -o-transform: translateZ(0) @transforms;
+  transform: translateZ(0) @transforms;
+}
+.animation (@args) {
+  -webkit-animation: @args;
+  -moz-animation: @args;
+  -o-animation: @args;
+  animation: @args;
+}
+.transition (@property: all, @duration: 0.2s, @trans: linear) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+.ease-out-cubic(@duration: 0.2s) {
+  .transition(all, @duration, cubic-bezier(0.215, 0.61, 0.355, 1));
+}
+.is-hidden {
+  visibility: hidden !important;
+  opacity: 0;
+  // margin-top: 100px !important;
+  .ease-out-cubic(1s);
+}
+.bounce-in {
+  visibility: visible;
+  opacity: 1;
+  .ease-out-cubic(1s);
+}

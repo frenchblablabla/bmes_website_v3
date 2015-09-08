@@ -1,0 +1,139 @@
+@import "mixins.less";
+@import "main.less";
+/***
+HOMEPAGE FORMATTING
+
+  TABLE OF CONTENTS
+
+    START - main carousel
+    MAIN CONTENT - meeting times, about, related events, subteams, application links
+***/
+/******************** CAROUSEL ********************/
+
+#committee-carousel {
+  height: 100vh;
+  position: relative;
+  @media (min-width: 768px) {
+    height: 70vh;
+  }
+  overflow: hidden;
+}
+.intro-text {
+  z-index: 10;
+}
+.carousel-indicators {
+  bottom: 0 !important;
+  li {
+    border: none;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    .box-shadow(0, 1px, 5px, rgba(0, 0, 0, 0.3));
+    .ease-out-cubic(0.6s);
+  }
+  .active {
+    width: 16px;
+    height: 16px;
+    margin: -3px 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+.carousel-caption {
+  position: absolute;
+  text-align: left;
+  left: 50%;
+  top: 75%;
+  .transform(translate(-49.7%, 0));
+  p {
+    margin: 0;
+  }
+  .credits {
+    color: @gray;
+  }
+}
+.carousel-inner {
+  position: absolute;
+  height: 100%;
+  .item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/overlay.png"), url("/images/cover.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+}
+/******************** MAIN CONTENT ********************/
+
+h3 {
+  color: black !important;
+}
+.related-events {
+  padding: 0;
+  text-align: center;
+  .item {
+    padding: 1em 1.5em;
+    margin: 0;
+    .item-inner {
+      position: relative;
+      height: 250px;
+      width: 100%;
+      padding: 1em;
+      background-color: lighten(desaturate(@blue, 30%), 10%);
+      background-image: url("/images/beday1.jpg");
+      background-size: cover;
+      background-position: center;
+      .ease-out-cubic;
+      &:hover {
+        background-color: @blue;
+        margin-top: -5px;
+        margin-bottom: 5px;
+      }
+      h4 {
+        z-index: 2;
+        // color: black !important;
+        position: absolute;
+        margin-top: 0;
+      }
+    }
+  }
+}
+.application-links {
+
+  .new {
+    background-color: lighten(desaturate(@blue, 30%), 30%);
+  }
+
+  .app {
+    padding: 1em;
+    display: inline-block;
+    .app-inner {
+      padding: 1em;
+      padding-bottom: 2.5em;
+      .ease-out-cubic;
+      &:hover {
+        background-color: lighten(desaturate(@blue, 40%), 40%);
+      }
+
+      h4 {
+        color: black !important;
+      }
+      .due-date {
+        float: right;
+        text-align: right;
+        white-space: nowrap;
+        display: inline-block;
+        .due {
+          display: inline-block;
+          margin: 0;
+        }
+        .date {
+          display: inline-block;
+          margin: 0;
+          color: @blue;
+        }
+      }
+    }
+  }
+}
