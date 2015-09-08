@@ -18,4 +18,4 @@ Clone this repo:
 `git clone https://git@github.com/ckmah/bmes_website_v3.git`
 
 Gulp in action:
-!(Gulp demo)[/readme_assets/gulp.png?raw=true]
+![Gulp demo](https://github.com/ckmah/bmes_website_v3/raw/master/readme_assets/gulp.png)
