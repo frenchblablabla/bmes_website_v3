@@ -15,7 +15,7 @@ Everything is pre-installed/downloaded already and maintenance is easy! The only
 
 Clone this repo:
 
-`git clone https://git@github.com/ckmah/bmes_website_v3.git`
+`git clone https://git@github.com:ckmah/bmes_website_v3.git`
 
 Gulp in action:
 
