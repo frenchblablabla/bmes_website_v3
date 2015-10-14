@@ -9,7 +9,7 @@ This website was developed mostly using:
 
 Each respective site has great documentation and I would suggest using these resources (in combination with Google) for development.
 
-Everything is pre-installed/downloaded already and maintenance is easy! The only thing you will need to install is [Node.js](https://nodejs.org/en/ "Node.js Homepage"). You should be pretty comfortable with basic command line as well as the basics of Github for version control.
+Everything is pre-installed/downloaded already and maintenance is easy! The only thing you will need to install is [Node.js](https://nodejs.org/en/ "Node.js Homepage"). You should be pretty comfortable with basic command line as well as the basics of [Github](https://github.com/ "Github Homepage") for version control, though here's a [tutorial](https://help.github.com/articles/set-up-git/ "Set Up Git - User Documentation") just in case.
 
 ---
 
