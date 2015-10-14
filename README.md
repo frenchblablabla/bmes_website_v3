@@ -38,12 +38,15 @@ sudo npm install --save-dev
 sudo npm install -g gulp
 ```
 
-**sudo** - grants administrator privilege to commands, in this case to **npm**
-**npm** - node package manager, installs nodejs packages in particular gulp and various extensions/plugins
-**install** - npm command to install packages
-**-save-dev** - flag for npm to adds dependencies (can be found under
-devDependencies in package.json file)
-**-g** - optional flag for install, installs globally
+- **sudo** - grants administrator privilege to commands, in this case to **npm**
+
+- **npm** - node package manager, installs nodejs packages in particular gulp and various extensions/plugins
+
+- **install** - npm command to install packages
+
+- **-save-dev** - flag for npm to adds dependencies (can be found under devDependencies in package.json file)
+
+- **-g** - optional flag for install, installs globally
 
 To start developing, simply type `gulp` in your working directory (`.../bmes_website_v3`):
 
