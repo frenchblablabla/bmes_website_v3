@@ -19,7 +19,8 @@
     "jshint-stylish": "~2.0.1",
     "gulp-less-sourcemap": "~1.4.2",
     "browser-sync": "~2.9.2",
-    "gulp-concat": "~2.6.0"
+    "gulp-concat": "~2.6.0",
+    "run-sequence": "~1.1.4"
   },
   "dependencies": {
     "gulp-imagemin": "~2.3.0",

@@ -357,7 +357,7 @@ a:hover {
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .officer-bubble:hover {
-  background-color: #2196f3 !important;
+  background-color: #2196F3 !important;
 }
 /******************** FOOTER ********************/
 .footer {

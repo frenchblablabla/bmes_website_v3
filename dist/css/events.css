@@ -357,7 +357,7 @@ a:hover {
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .officer-bubble:hover {
-  background-color: #2196f3 !important;
+  background-color: #2196F3 !important;
 }
 /******************** FOOTER ********************/
 .footer {
@@ -501,7 +501,7 @@ HOMEPAGE FORMATTING
     background-image: url("/images/beday2.jpg") !important;
   }
   #cd-timeline .cd-timeline-block:nth-child(1) .cd-timeline-img {
-    background-color: #2196f3;
+    background-color: #2196F3;
   }
   #cd-timeline .cd-timeline-block:nth-child(2) .cd-timeline-content {
     background-image: url("/images/overlay_white.png"), url("/images/labexpo2.jpg");
@@ -511,7 +511,7 @@ HOMEPAGE FORMATTING
     background-image: url("/images/labexpo2.jpg") !important;
   }
   #cd-timeline .cd-timeline-block:nth-child(2) .cd-timeline-img {
-    background-color: #4caf50;
+    background-color: #4CAF50;
   }
   #cd-timeline .cd-timeline-block:nth-child(3) .cd-timeline-content {
     background-image: url("/images/overlay_white.png"), url("/images/beinspired2.jpg");
@@ -521,7 +521,7 @@ HOMEPAGE FORMATTING
     background-image: url("/images/beinspired2.jpg") !important;
   }
   #cd-timeline .cd-timeline-block:nth-child(3) .cd-timeline-img {
-    background-color: #9c27b0;
+    background-color: #9C27B0;
   }
   #cd-timeline .cd-timeline-block:nth-child(4) .cd-timeline-content {
     background-image: url("/images/overlay_white.png"), url("/images/panels2.jpg");
@@ -551,7 +551,7 @@ HOMEPAGE FORMATTING
     background-image: url("/images/mentormentee2.jpg") !important;
   }
   #cd-timeline .cd-timeline-block:nth-child(6) .cd-timeline-img {
-    background-color: #2196f3;
+    background-color: #2196F3;
   }
   #cd-timeline .cd-timeline-block:nth-child(7) .cd-timeline-content {
     background-image: url("/images/overlay_white.png"), url("/images/beday1.jpg");
@@ -561,7 +561,7 @@ HOMEPAGE FORMATTING
     background-image: url("/images/beday1.jpg") !important;
   }
   #cd-timeline .cd-timeline-block:nth-child(7) .cd-timeline-img {
-    background-color: #4caf50;
+    background-color: #4CAF50;
   }
 }
 #cd-timeline .cd-timeline-content {

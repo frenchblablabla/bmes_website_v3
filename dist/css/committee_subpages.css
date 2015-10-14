@@ -357,7 +357,7 @@ a:hover {
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .officer-bubble:hover {
-  background-color: #2196f3 !important;
+  background-color: #2196F3 !important;
 }
 /******************** FOOTER ********************/
 .footer {
@@ -490,7 +490,7 @@ h3 {
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .related-events .item .item-inner:hover {
-  background-color: #2196f3;
+  background-color: #2196F3;
   margin-top: -5px;
   margin-bottom: 5px;
 }
@@ -533,5 +533,5 @@ h3 {
 .application-links .app .app-inner .due-date .date {
   display: inline-block;
   margin: 0;
-  color: #2196f3;
+  color: #2196F3;
 }
