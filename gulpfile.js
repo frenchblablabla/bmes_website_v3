@@ -46,7 +46,8 @@ gulp.task('build-js', function() {
         // only uglify if gulp is ran with '--type production'
         .pipe(plugins.util.env.type === 'production' ? plugins.uglify() : plugins.util.noop())
         .pipe(plugins.sourcemaps.write())
-        .pipe(gulp.dest(bases.dist + 'js/'));
+        .pipe(gulp.dest(bases.dist + 'js/'))
+        .pipe(browserSync.stream());
 });
 
 // task ensures the `build-js` task is complete before reloading browsers
@@ -108,10 +109,23 @@ gulp.task('serve', function(gulpCallback) {
         }
     }, function callback() {
         // server is now up, watch files
-        gulp.watch(bases.dev + paths.jsAll, ['jshint', 'js-watch']);
-        gulp.watch(bases.dev + paths.styles, ['build-css']);
-        gulp.watch(bases.dev + paths.images, ['imagemin']);
-        gulp.watch(bases.dev + paths.html, ['copy-html']);
+        gulp.watch(paths.html, {
+            cwd: bases.dev,
+            base: bases.dev
+        }, ['copy-html']);
+        gulp.watch(paths.jsAll, {
+            cwd: bases.dev,
+            base: bases.dev
+        }, ['jshint', 'js-watch']);
+        gulp.watch(paths.styles, {
+            cwd: bases.dev,
+            base: bases.dev
+        }, ['build-css']);
+        gulp.watch(paths.images, {
+            cwd: bases.dev,
+            base: bases.dev
+        }, ['imagemin']);
+
         //gulp.watch(bases.dev + paths.extras, ['copy-extras']);
         gulpCallback();
     });
